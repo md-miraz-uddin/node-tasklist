@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- FAVIcon -->
+    <link
+            href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAhuj8AHLa+wDXx34A67V2APfVhwDr6uoA9/X0APv8+QD37KoA9eOzAOPNhgD39/cA3JYxAEmz5wBOx/kA9+ePAPGeOwDc3NkAhuP7APGqQwD35qMA7rVWAPbihQDr1YkA9MxoAPf08AD9/v0A7u/uAO/v7gDl5OQA/KsfANbV1QD28OsA5MByAOTe1ADyn2MA9stbAPv26wD37aEA7e/vAP7+/gDum28A+fr5APbpnAD19vQA3dzbAPDJpADa0s4A4NzbAG/Z+QDomkkA4ch+AO/ioADXsnIA6enoANLW1AD36I8A7unoAP/+/wD21H0A+6ZAAPXs6AD3+PgA8ePQAPj4+AD17aMA8rRkAN6QFADp5uEA4dKNAPfmlgDn5+cA5dvPAFnL+gD18vEA19HTAN/f3QDWzc4A9eKJAPT09AD48ewA7stnAPLrogDywVoA9tyjAOrk4AD5nlkA+fTkANbU1AD7/PcA////AOe4hQD55YoA2tbXANTS0gBSxPcA/f39APfjqQD+/f0A7eahAODf3wD265sAr9zyAOTKhQD55JYA+uiTAPnjgAD29/YA9u+pAPHz8QDnxXIA3cuLAHzg+gDu69YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHigcHTcjAAAAAAAAAAAASAYAAAAtZTAAAAAAAAAAAG4AAAAAABtWGgdYCkcXCQApRVAAbE0xEitjQDVrXTliAABOSyBZXy5bO1FcBGkQLAAAQT84TF4IW2FaJW1tahUAAABBckk6IT4mFCptZicAAAAADB9SNg1EMyIvU0JPAAAAAFU8VBFDbzQDRmQZAAAAAAAFPVckFhgLcGhnAAAAAAAAAAAAAAAADmAPcQEAAAAAAAAAAAAAAABKMgITAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAAgf8AADj/AAB8AQAAEAAAAMAAAADAAAAA4AEAAOABAADgAwAA4AcAAP+DAAD/wwAA//8AAP//AAA="
+            rel="icon"
+            type="image/x-icon"
+    />
+
+    <!-- Toaster -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+            integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css"/>
+
+    <title>Form</title>
+</head>
+<body onload="welcome()">
+<div class="container">
+    <div class="row g-3 mt-5">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-5 mx-auto">
+            <div class="card shadow">
+                <div class="card-head">
+                    <h3 class="text-center p-3">Sign Up / Register</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row g-3 align-items-center mb-3">
+                            <div class="col-4">
+                                <label for="inputMobile" class="col-form-label">Phone Number</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="number" id="inputMobile" class="form-control"
+                                       aria-describedby="inputMobileHelpInline">
+                                <span id="inputMobileHelpInline" class="form-text"></span>
+                            </div>
+                        </div>
+                        <div class="row g-3 align-items-center">
+                            <div class="col-4">
+                                <label for="inputPassword" class="col-form-label">Password</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="password" id="inputPassword" class="form-control"
+                                       aria-describedby="passwordHelpInline">
+                                <span id="passwordHelpInline" class="form-text"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4 col-sm-2 float-end">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"
+></script>
+<script src="js/toword.js"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+></script>
+<script src="js/script.min.js"></script>
+</body>
+</html>
